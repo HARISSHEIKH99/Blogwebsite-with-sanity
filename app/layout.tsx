@@ -4,9 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import style from "styled-jsx/style";
-
-
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,9 +28,9 @@ export default function RootLayout({
   
 }>) {
   return (
-    <html lang="en" className="light" >
+    <html lang="en" className="dark" >
       <body 
-        className={`${geistSans.variable} {{color-scheme:"light"}} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 <ThemeProvider
   

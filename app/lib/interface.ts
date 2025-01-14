@@ -1,15 +1,17 @@
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
 export interface simpleBlogCard {
     title: string;
     smallDescription: string;
     currentSlug: string;
-    titleImage: any;
+    titleImage: SanityImageSource;
 }
 
 export interface fullBlog {
  currentSlug: string;
  title: string;
- content: any;
- titleImage: any;
+ content: string;
+ titleImage: SanityImageSource;
 }
 
 
